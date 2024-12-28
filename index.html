@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body class="home-background">
+    <!-- Header -->
+    <header class="animated fade-in">
+        <div class="logo">
+            <h1>Wander Gala&Explore</h1>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero animated zoom-in">
+        <div class="hero-content">
+            <h2>Explore the World with Gala&Explore!</h2>
+            <p>Discover breathtaking and eye-catching destinations for you discover!</p>
+            <a href="#destinations" class="btn-primary">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section id="destinations" class="destinations animated slide-up">
+        <div class="destination">
+            <img src="japan.jpg" alt="Paris" />
+            <h3>Japan</h3>
+            <p>Japan is a unique blend of ancient traditions and cutting-edge technology, offering an unforgettable experience for all types of travelers.</p>
+            <div class="more-content">
+                <p>With its rich cultural heritage, stunning landscapes, and futuristic cities like Tokyo, Japan seamlessly mixes history and modernity. Whether you're exploring historic temples, hiking through scenic mountains, or enjoying delicious cuisine, Japan provides an extraordinary journey filled with warm hospitality and unforgettable moments.</p>
+            </div>
+            <a href="javascript:void(0)" class="read-more" onclick="toggleContent(this)">Read More</a>
+        </div>
+        <div class="destination">
+            <img src="france.jpg" alt="New York City" />
+            <h3>France</h3>
+            <p>France is a country of diverse landscapes, rich culture, and unparalleled history, offering a perfect blend of ancient traditions and modern sophistication.</p>
+            <div class="more-content">
+                <p>From the charming streets of Paris to the scenic vineyards of Bordeaux, France is known for its world-class art, architecture, and cuisine. Whether you’re exploring historic landmarks, relaxing on the French Riviera, or indulging in gourmet food and wine, France promises an unforgettable experience for every traveler.</p>
+            </div>
+            <a href="javascript:void(0)" class="read-more" onclick="toggleContent(this)">Read More</a>
+        </div>
+        <div class="destination">
+            <img src="italy.jpg" alt="Tokyo" />
+            <h3>Italy</h3>
+            <p>Italy is a country renowned for its rich history, stunning art, and exquisite cuisine, offering a journey through time and culture.</p>
+            <div class="more-content">
+                <p>From the ancient ruins of Rome to the romantic canals of Venice, Italy’s cities are a living testament to centuries of art, architecture, and heritage. Whether savoring authentic pasta, exploring world-class museums, or admiring breathtaking landscapes, Italy captivates travelers with its timeless beauty and vibrant culture.</p>
+            </div>
+            <a href="javascript:void(0)" class="read-more" onclick="toggleContent(this)">Read More</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h1>Gala&Explore</h1>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <p>&copy; 2024 Gala&Explore. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleContent(button) {
+            var content = button.previousElementSibling;
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+                button.textContent = "Read Less";
+            } else {
+                content.style.display = "none";
+                button.textContent = "Read More";
+            }
+        }
+    </script>
+</body>
+</html>
